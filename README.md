@@ -1,2 +1,0 @@
-# bubblemail
-Universal mail notifier
