@@ -4,7 +4,7 @@ Version:	1.9
 Release:	1
 Group:		Networking/Mail
 License:	GPL-2.0-only
-URL:		http://bubblemail.free.fr/
+URL:		https://bubblemail.free.fr/
 Source0:	https://framagit.org/razer/%{name}/-/archive/v%{version}/%{name}-v%{version}.tar.bz2
 BuildRequires:	gettext-devel
 BuildRequires:	pkgconfig(appstream-glib)
