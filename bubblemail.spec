@@ -1,7 +1,7 @@
 Summary:	Extensible mail notification service.
 Name:		bubblemail
 Version:	1.9
-Release:	1
+Release:	2
 Group:		Networking/Mail
 License:	GPL-2.0-only
 URL:		https://bubblemail.free.fr/
