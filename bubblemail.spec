@@ -1,7 +1,7 @@
 Summary:	Extensible mail notification service.
 Name:		bubblemail
-Version:	1.9
-Release:	2
+Version:	1.12
+Release:	1
 Group:		Networking/Mail
 License:	GPL-2.0-only
 URL:		https://bubblemail.free.fr/
@@ -55,7 +55,7 @@ written in python.
 #----------------------------------------------------------------------
 
 %prep
-%autosetup -p1 -n %{name}-v%{version}
+%autosetup -p1 -n bubblemail-v1.12
 
 
 %build
