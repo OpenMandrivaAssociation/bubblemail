@@ -1,4 +1,4 @@
-Summary:	Extensible mail notification service.
+Summary:	Extensible mail notification service
 Name:		bubblemail
 Version:	1.12
 Release:	1
@@ -30,14 +30,17 @@ Recommends:	gnome-online-accounts
 #Recommends:	gnome-shell-extension-bubblemail
 
 %description
-Bubblemail is a DBus service providing a list of the new and unread user's mail from:
+Bubblemail is a DBus service providing a list of the new
+and unread user's mail from:
 
   * Local inbox (mbox and maildir formats)
-  * POP3 and/or IMAP servers defined as internal accounts
-  * Gnome online accounts with email support (Google, Microsoft exchange, IMAP and SMTP)
+  * POP3 and IMAP servers defined as internal accounts
+  * Gnome online accounts with email support
+    (Google, Microsoft Exchange, IMAP and SMTP)
 
-It's desktop independent, highly configurable, can be extended via plugins, and is mostly
-written in python.
+It is desktop independent and highly configurable.
+It can be extended via plugins, and is mostly written
+in Python.
 
 %files -f %{name}.lang
 %license LICENSE.txt
@@ -52,7 +55,6 @@ written in python.
 %{_mandir}/man1/%{name}.1*
 %{_mandir}/man1/%{name}d.1*
 %{python3_sitelib}/%{name}/
-%{python3_sitelib}/%{name}-%{version}-*.*-info
 %{_metainfodir}/%{name}.appdata.xml
 
 #----------------------------------------------------------------------
