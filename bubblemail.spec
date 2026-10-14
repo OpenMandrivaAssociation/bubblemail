@@ -7,12 +7,15 @@ License:	GPL-2.0-only
 URL:		https://bubblemail.free.fr/
 Source0:	https://framagit.org/razer/%{name}/-/archive/v%{version}/%{name}-v%{version}.tar.bz2
 BuildRequires:	gettext-devel
+BuildRequires:	meson
 BuildRequires:	pkgconfig(appstream-glib)
 BuildRequires:	pkgconfig(folks)
+BuildRequires:	pkgconfig(gio-2.0)
+BuildRequires:	pkgconfig(glib-2.0)
+BuildRequires:	pkgconfig(gobject-2.0)
 BuildRequires:	pkgconfig(python3)
 BuildRequires:	python%{pyver}dist(pillow)
 BuildRequires:	python%{pyver}dist(pyxdg)
-BuildRequires:	python%{pyver}dist(setuptools)
 BuildRequires:	vala
 
 Requires:	gnome-keyring
@@ -56,13 +59,14 @@ written in python.
 
 %prep
 %autosetup -p1 -n bubblemail-v1.12
-
+chmod +x build_tools/get_version.sh
 
 %build
-%py_build
+%meson
+%meson_build
 
 %install
-%py_install
+%meson_install
 
 # locales
 %find_lang %{name}
